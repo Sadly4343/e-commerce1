@@ -1,0 +1,45 @@
+body {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item img {
+    height: auto;
+    width: 400px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 20%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.signup_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 20%;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+}

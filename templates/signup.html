@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaskTest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+    <h1>Welcome to the E-Commerce Site</h1>
+    <nav>
+        <ul class="navigation">
+            <li><a class="active" href="http://127.0.0.1:5000/">Home
+                </a></li>
+            <li><a href="http://127.0.0.1:5000/signup">Sign Up
+                </a></li>
+            <li><a href="http://127.0.0.1:5000/login">Log In
+                </a></li>
+        </ul>
+    </nav>
+    <div class="signup_container">
+        <form class="signup" action="/submit" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
+            <button type="submit"> Complete Signup</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

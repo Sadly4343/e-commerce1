@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaskTest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the E-Commerce Site</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a class="active" href="index.html">Home
+                    </a></li>
+                <li><a href=" https://byui.instructure.com">Sign Up
+                    </a></li>
+                <li><a href="https://github.com/Sadly4343">Log In
+                    </a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h2>E-Commerce</h2>
+        {% block body %}
+        <p>What would you like to purchase?</p>
+        {% for product in products %}
+        <div class="container">
+            <div class="product-item">
+                <h2>{{ product.product_name}}</h2>
+                <p>Price: ${{ product.product_price }}</p>
+                <img src="{{ product.product_img }}">
+            </div>
+        </div>
+        {% else %}
+        <p>No products available.</p>
+        {% endfor %}
+        {% endblock %}
+    </main>
+</body>
+
+</html>
