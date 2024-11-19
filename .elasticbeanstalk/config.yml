@@ -1,2 +1,5 @@
+branch-defaults:
+  master:
+    environment: E-commerce-env-2
 global:
   profile: null
