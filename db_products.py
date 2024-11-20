@@ -59,8 +59,6 @@ def query_item():
     choiceint = int(choice)
     #Will select based on Key value of Category and return the items that match that category
     if choiceint == 1:
-        keyvalue = input("Choose Category").lower()
-        if keyvalue == 'category':
             category = input("Choose the category ")
             response = products_table.query(
             KeyConditionExpression=Key('category').eq(category))
